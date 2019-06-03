@@ -11,3 +11,58 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#map div.ol-viewport {
+  background-color: #000;
+}
+.ol-control {
+  position: absolute;
+  background-color: hsla(0,0%,100%,.4);
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.ol-zoom {
+  left: 1.6rem;
+  right: auto;
+  top: auto;
+  bottom: 5.2rem;
+  padding: 0;
+}
+
+.ol-zoom.ol-control {
+  background: none;
+}
+.ol-control button {
+  display: block;
+  margin: 1px;
+  padding: 0;
+  color: #fff;
+  font-size: 1.14em;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  height: 1.375em;
+  width: 1.375em;
+  line-height: .4em;
+  background-color: rgba(0,60,136,.5);
+  border: none;
+  border-radius: 2px;
+}
+.ol-full-screen button, .ol-tut, .ol-zoom.ol-control .ol-zoom-in, .ol-zoom.ol-control .ol-zoom-out {
+  border-radius: 0;
+  height: 3rem;
+  width: 3rem;
+  transition: background-color .2s ease;
+  cursor: pointer;
+}
+
+.ol-zoom.ol-control .ol-zoom-in  {
+  margin-bottom: .4rem;
+}
+
+.ol-zoom.ol-control .ol-zoom-in, .ol-zoom.ol-control .ol-zoom-out {
+  background-color: #8e0000;
+  border: .2rem solid #bc3c26;
+  color: #fff;
+}
