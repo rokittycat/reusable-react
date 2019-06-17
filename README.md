@@ -1,3 +1,13 @@
+## Presentation
+
+Check out the [DevTalks presentation slides ](https://bit.ly/2XeWckh).
+
+### Resources
+[Play safely in sandboxed IFrames](https://www.html5rocks.com/en/tutorials/security/sandboxed-iframes/)
+[Building a React widget library using Webpack](https://codeburst.io/building-react-widget-libraries-using-webpack-e0a140c16ce4)
+
+## Demo based on Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
