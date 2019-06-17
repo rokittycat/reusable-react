@@ -1,6 +1,6 @@
 ## Presentation
 
-Check out the [DevTalks presentation slides ](https://bit.ly/2XeWckh).
+Check out the [DevTalks presentation slides ](https://bit.ly/2FcY3f2).
 
 ### Resources
 [Play safely in sandboxed IFrames](https://www.html5rocks.com/en/tutorials/security/sandboxed-iframes/)
