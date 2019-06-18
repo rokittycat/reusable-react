@@ -64,10 +64,11 @@
     <div class="jumbotron">
         <div class="container">
             <h1 class="display-3">Hello, Ubisoft!</h1>
+            <p>Testing a ReactJS widget integration in another boostrap powered page</p>
         </div>
     </div>
 
-    <div id="react-widget" style="border: 1px solid darkblue; border-radius:6px; margin:20px; height: 400px; overflow:hidden"></div><!-- /react-widget -->
+    <div id="react-widget" style="border: 1px solid darkblue; border-radius:6px; margin:20px; height: 500px; overflow:hidden"></div><!-- /react-widget -->
 
 </main>
 
@@ -79,11 +80,23 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 <script>
+    var link = "https://ubistatic2-a.akamaihd.net/openmaps/prod/gc/tiles/fc-newdawn-1.1/capabilities.xml";
+    var layer = "Open Maps;Far Cry - New Dawn;1.0.0";
+
     document.addEventListener("DOMContentLoaded", function(event) {
-        var OpenMapsConfig = {
+        var AlexasWidgetConfig = {
+            link: "https://ubistatic2-a.akamaihd.net/openmaps/prod/gc/tiles/fc-newdawn-1.1/capabilities.xml",
+            layer: "Open Maps;Far Cry - New Dawn;1.0.0",
+            viewOptionsConfig: {
+                zoom: 16,
+                minZoom: 13,
+                maxZoom: 17,
+                extent: [-8119, -8167, 8119, 8167],
+                center: [0, 0]
+            },
             selector: "#react-widget"
         };
-        var Instance = OpenMapsWidget.default.widgets.myWidget.new(OpenMapsConfig);
+        var Instance = AlexasLib.default.widgets.AlexasWidget.new(AlexasWidgetConfig);
         // Instance.on("SOME_EVENT", ()=> CALLBACK);
         Instance.render({ selector: "#react-widget"})
     });

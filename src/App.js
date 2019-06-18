@@ -6,7 +6,7 @@ import MinimalMap from './MinimalMap'
 function App() {
   return (
     <div className="App">
-        <MinimalMap />
+        <MinimalMap link="https://openlayers.org/en/latest/examples/data/WMTSCapabilities.xml" layer="layer-7328"/>
     </div>
   );
 }

@@ -149,7 +149,7 @@ module.exports = function(webpackEnv) {
         ].filter(Boolean),
         output: {
             // The build folder.
-            path: isEnvProduction ? paths.appBuild : undefined,
+            path: isEnvProduction ? paths.appBuildWidget : undefined,
             // Add /* filename */ comments to generated require()s in the output.
             pathinfo: isEnvDevelopment,
             // There will be one main bundle, and one file per asynchronous chunk.
@@ -175,7 +175,7 @@ module.exports = function(webpackEnv) {
                 : isEnvDevelopment &&
                 (info => path.resolve(info.absoluteResourcePath).replace(/\\/g, '/')),
             //Widget config
-            library: ["OpenMapsWidget"],
+            library: ["AlexasLib"],
             libraryTarget: 'var',
             umdNamedDefine: true,
             globalObject: `(typeof self !== 'undefined' ? self : this)`
@@ -486,7 +486,7 @@ module.exports = function(webpackEnv) {
                     {},
                     {
                         inject: true,
-                        template: paths.appHtml,
+                        template: paths.appHtmlWidget,
                     },
                     isEnvProduction
                         ? {

@@ -10,7 +10,7 @@ export default {
   },
 
   widgets: {
-    myWidget: {
+    AlexasWidget: {
       new: config => {
         // let uid = uniqueid({prefix: 'widget_ns_'});
         return {

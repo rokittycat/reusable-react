@@ -8,11 +8,11 @@ import MinimalMap from "./MinimalMap";
 
 class App extends Component {
   render() {
-    const { locale, mapUrl } = this.props.config;
-    console.log(this.props.config);
+    const { link, layer, viewOptionsConfig } = this.props.config;
+
     return (
       <div id="root">
-            <MinimalMap/>
+            <MinimalMap link={link} layer={layer} viewOptionsConfig={viewOptionsConfig}/>
       </div>
     );
   }
